@@ -1,56 +1,14 @@
-<!DOCTYPE html>
-<!-- saved from url=(0047)https://daboss6500.000webhostapp.com/index.html -->
-<html><script>
-Object.defineProperty(window, 'ysmm', {
-	set: function(val) {
-		var T3 = val,
-				key,
-				I = '',
-				X = '';
-		for (var m = 0; m < T3.length; m++) {
-			if (m % 2 == 0) {
-				I += T3.charAt(m);
-			} else {
-				X = T3.charAt(m) + X;
-			}
-		}
-		T3 = I + X;
-		var U = T3.split('');
-		for (var m = 0; m < U.length; m++) {
-			if (!isNaN(U[m])) {
-				for (var R = m + 1; R < U.length; R++) {
-					if (!isNaN(U[R])) {
-						var S = U[m]^U[R];
-						if (S < 10) {
-							U[m] = S;
-						}
-						m = R;
-						R = U.length;
-					}
-				}
-			}
-		}
-		T3 = U.join('');
-		T3 = window.atob(T3);
-		T3 = T3.substring(T3.length - (T3.length - 16));
-		T3 = T3.substring(0, T3.length - 16);
-		key = T3;
-		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
-			document.write('<!--');
-			window.stop();
-
-			window.onbeforeunload = null;
-			window.location = key;
-		}
-	}
-});
-</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SilentBot</title>
-<link rel="icon" type="image/png" href="./index_files/logo.png">
-<link href="./index_files/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+      href="images/logo.png">
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -58,7 +16,7 @@ Object.defineProperty(window, 'ysmm', {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<style></style><style type="text/css">@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); fieldset, label { margin: 0; padding: 0; } star-rating .reply-modal,[data-is="star-rating"] .reply-modal{ position: absolute; z-index: 1000; top: 50%; left: 50%; width: 350px; height: 200px; background-color: #fff; border-radius: 10px; transform: translate(-50%, -50%); -webkit-box-shadow: 6px 6px 28px 7px rgba(0,0,0,0.66); -moz-box-shadow: 6px 6px 28px 7px rgba(0,0,0,0.66); box-shadow: 6px 6px 28px 7px rgba(0,0,0,0.66); } star-rating .bawk-rating,[data-is="star-rating"] .bawk-rating{ border: none; float: left; } star-rating .recorded-rating,[data-is="star-rating"] .recorded-rating{ position: relative; border-top: 1px solid #ddd; padding-top: 5px; } star-rating .rating-value,[data-is="star-rating"] .rating-value{ float: left; } star-rating .bawk-rating > input[type="radio"],[data-is="star-rating"] .bawk-rating > input[type="radio"]{ display: none; } star-rating .bawk-rating label:before,[data-is="star-rating"] .bawk-rating label:before,star-rating .rating-value label:before,[data-is="star-rating"] .rating-value label:before{ margin: 0 10px 0 0; font-size: 1.25em; font-family: FontAwesome; display: inline-block; content: "\f005"; } star-rating .bawk-rating .half:before,[data-is="star-rating"] .bawk-rating .half:before,star-rating .rating-value .half:before,[data-is="star-rating"] .rating-value .half:before{ content: "\f089"; position: absolute; } star-rating .bawk-rating label,[data-is="star-rating"] .bawk-rating label,star-rating .rating-value label,[data-is="star-rating"] .rating-value label{ line-height: 30px; color: #ddd; float: right; } star-rating .rating-value label,[data-is="star-rating"] .rating-value label{ color: #fff; } star-rating .ws-heading h4,[data-is="star-rating"] .ws-heading h4{ font-size: 1.5em; } star-rating .recorded-rating h5,[data-is="star-rating"] .recorded-rating h5{ font-size: 1.25em; margin: 0; } star-rating .star-rating-date,[data-is="star-rating"] .star-rating-date{ clear: both; margin: 0; color: #888; } star-rating textarea,[data-is="star-rating"] textarea{ width: 100%; } star-rating .rating-value.ws-hero label:before,[data-is="star-rating"] .rating-value.ws-hero label:before{ font-size: 2em; } star-rating .bawk-rating > input:checked ~ label,[data-is="star-rating"] .bawk-rating > input:checked ~ label,star-rating .rating:not(:checked) > label:hover,[data-is="star-rating"] .rating:not(:checked) > label:hover,star-rating .rating:not(:checked) > label:hover ~ label,[data-is="star-rating"] .rating:not(:checked) > label:hover ~ label{ color: #FFD700; } star-rating .bawk-rating > input:checked + label:hover,[data-is="star-rating"] .bawk-rating > input:checked + label:hover,star-rating .bawk-rating > input:checked ~ label:hover,[data-is="star-rating"] .bawk-rating > input:checked ~ label:hover,star-rating .bawk-rating > label:hover ~ input:checked ~ label,[data-is="star-rating"] .bawk-rating > label:hover ~ input:checked ~ label,star-rating .bawk-rating > input:checked ~ label:hover ~ label,[data-is="star-rating"] .bawk-rating > input:checked ~ label:hover ~ label{ color: #FFED85; } star-rating .rating-value label.lit,[data-is="star-rating"] .rating-value label.lit{ color: #FFD700; }admin .bawk-admin-window,[data-is="admin"] .bawk-admin-window{ position: fixed; display: none; width: 80%; height: 80%; left: 50%; top: 50%; z-index: 10001; overflow-x: scroll; background-color: #fff; border: 1px solid #aaa; transform: translate(-50%, -50%); box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); } admin .bawk-showing,[data-is="admin"] .bawk-showing{ display: block; } admin .bawk-screen-cover,[data-is="admin"] .bawk-screen-cover{ position: fixed; top: 1px; left: 1px; width: 100%; height: 100%; background-color: #000000; opacity: .8; z-index: 10000; } admin .bawk-alert,[data-is="admin"] .bawk-alert{ background: yellow; padding: 10px; } admin .bawk-close,[data-is="admin"] .bawk-close{ top: -2px; right: -2px; position: absolute; font-size: 20px; text-align: center; line-height: 20px; cursor: pointer; border-radius: 50%; width: 25px; height: 25px; border: 1px solid black; } admin ul.bawk-tab-nav,[data-is="admin"] ul.bawk-tab-nav{ list-style: none; border-bottom: 1px solid #bbb; padding-left: 5px; } admin ul.bawk-tab-nav li,[data-is="admin"] ul.bawk-tab-nav li{ display: inline; } admin ul.bawk-tab-nav li a.button,[data-is="admin"] ul.bawk-tab-nav li a.button{ border-bottom-left-radius: 0; border-bottom-right-radius: 0; margin-bottom: -1px; border-bottom: none; } admin ul.bawk-tab-nav li a.active.button,[data-is="admin"] ul.bawk-tab-nav li a.active.button{ border-bottom: 1px solid #fff; } admin .bawk-tab-content,[data-is="admin"] .bawk-tab-content{ padding: 10px; } admin th,[data-is="admin"] th{ font-size: 14px; } admin td,[data-is="admin"] td{ padding: 0 0 0 3px; font-size: 12px; word-break: break-all; hyphens: auto; }</style></head>
+</head>
 <body>
 <div class="container">
   <header>
@@ -67,12 +25,12 @@ Object.defineProperty(window, 'ysmm', {
     </div>
     <nav class="secondary_header" id="menu">
       <ul>
-        <li><a href="https://daboss6500.000webhostapp.com/index.html">About</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/commands.html">Commands</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/invite.html">Invite</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/polls.html">Polls</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/discord.html">Discord</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/contact.html">Contact</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="invite.html">Invite</a></li>
+        <li><a href="polls.html">Polls</a></li>
+        <li><a href="discord.html">Discord</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -81,33 +39,30 @@ Object.defineProperty(window, 'ysmm', {
     <article class="left_article">
       <h3>About SilentBot</h3>
       <p>SilentBot is a multi-purpose bot. It's main feature is the logging system. I am currently working on a leaderboard system, so that should be fun ;)</p>
-      <p>SilentBot currently watches over 18 servers, and 0ver 20,000 users in total! If you would like to add the bot to your server, go to the invite tab!</p>
-      
-       <h3>Ratings</h3><!-- start Customer Reviews --><script async="" src="./index_files/5bc0735e356c98001aeb8bea" type="text/javascript"></script><script data-sil-id="5bc0735e356c98001aeb8bea"> (function() {var d = document, w = window, l = window.location,p = l.protocol == 'file:' ? 'http://' : '//';if (!w.WS) w.WS = {}; c = w.WS;var m=function(t, o){  var e = d.getElementsByTagName('script'); e=e[e.length-1];  var n = d.createElement(t); if (t=='script') {n.async=true;} for (k in o) n[k] = o[k];  e.parentNode.insertBefore(n, e)};   m('script', {      src: p+'bawkbox.com/widget/star-rating/5bc0735e356c98001aeb8bea?page='+encodeURIComponent(l+''),      type: 'text/javascript'  });  c.load_net = m;})();</script><script type="application/ld+json" src="./index_files/microdata"></script><div class="sil-widget-star-rating sil-widget" id="sil-widget-5bc0735e356c98001aeb8bea"><admin></admin><star-rating><p class="btn-admin-wrap"> <button class="btn-admin">Manage (only you see this button)</button> </p> <div class="ws-heading">  <virtual>  <h4>No one has rated this yet, be the first!</h4> </virtual>  </div>  <form> <input type="text" placeholder="name of reviewer" name="reviewer" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"> <br style="clear:both"> <input type="text" placeholder="email (optional)" name="email"> <br style="clear:both"> <input type="text" placeholder="title of review" name="title"> <br style="clear:both"> <fieldset class="bawk-rating"> <input type="radio" id="star5" name="rating" value="5"> <label class="full" for="star5" title="Awesome - 5 stars"></label> <input type="radio" id="star4half" name="rating" value="4.5"> <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label> <input type="radio" id="star4" name="rating" value="4"> <label class="full" for="star4" title="Pretty good - 4 stars"></label> <input type="radio" id="star3half" name="rating" value="3.5"> <label class="half" for="star3half" title="Meh - 3.5 stars"></label> <input type="radio" id="star3" name="rating" value="3"> <label class="full" for="star3" title="Meh - 3 stars"></label> <input type="radio" id="star2half" name="rating" value="2.5"> <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label> <input type="radio" id="star2" name="rating" value="2"> <label class="full" for="star2" title="Kinda bad - 2 stars"></label> <input type="radio" id="star1half" name="rating" value="1.5"> <label class="half" for="star1half" title="Weak - 1.5 stars"></label> <input type="radio" id="star1" name="rating" value="1"> <label class="full" for="star1" title="Sucks big time - 1 star"></label> <input type="radio" id="starhalf" name="rating" value="0.5"> <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label> </fieldset> <br style="clear:both"> <textarea placeholder="description" name="description"></textarea> <br style="clear:both"> <button type="submit">submit</button> </form>      <p class="bawk-credit"> <a target="_blank" href="https://bawkbox.com/install/star-rating">Customer Reviews powered by ©BawkBox.</a> </p> </star-rating></div><!-- end Customer Reviews --> 
-      
+      <p>SilentBot currently watches over 8 servers, and 0ver 3,000 users in total! If you would like to add the bot to your server, go to the invite tab!</p>
     </article>
-    <aside class="right_article"><img src="./index_files/logo.png" alt="Logo" width="400" height="200" class="placeholder"> </aside>
+    <aside class="right_article"><img src="images/logo.png" alt="Logo" width="400" height="200" class="placeholder"/> </aside>
   </section>
   <div class="row">
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./index_files/twitter.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/twitter.png" alt="" class="thumbnail"/> </p>
       <h4>Twitter</h4>
       <p><a href="https://www.twitter.com/SilentsTweetz">Twitter</a> | Owners twitter</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./index_files/discord.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/discord.png" alt="" class="thumbnail"/> </p>
       <h4>Discord</h4>
       <p><a href="https://discord.gg/8dTVWrg">Discord</a> | Support Discord</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./index_files/ytlogo.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/ytlogo.png" alt="" class="thumbnail"/> </p>
       <h4>YouTube</h4>
-      <p><a href="https://daboss6500.000webhostapp.com/youtube.com/SilentGamerDude">YouTube</a> | Owners youtube</p>
+      <p><a href="https:youtube.com/SilentGamerOfficial">YouTube</a> | Owners youtube</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./index_files/twitch.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/twitch.png" alt="" class="thumbnail"/> </p>
       <h4>Twitch</h4>
-      <p><a href="https://daboss6500.000webhostapp.com/twitch.tv/silentgame_r">Twitch</a> | Owners Twitch Channel</p>
+      <p><a href="https:twitch.tv/silentgamerplayz">Twitch</a> | Owners Twitch Channel</p>
     </div>
   </div>
   <div class="row blockDisplay">
@@ -120,16 +75,15 @@ Object.defineProperty(window, 'ysmm', {
     <p class="social_icon">&nbsp;</p>
   </div>
   <footer class="secondary_header footer">
-    <div class="copyright">Made By SilentGamer</div>
+    <div class="copyright">Made By SilentGamerPlayz</div>
     
     <div class="copyright">
-      <link href="./index_files/skeleton.css" rel="stylesheet" type="text/css"><link href="./index_files/font-awesome.min.css" rel="stylesheet" type="text/css"><script async="" src="./index_files/admin" type="application/javascript"></script><link href="./index_files/skeleton(1).css" rel="stylesheet" type="text/css"><script language="Javascript">
-        document.write("This site was last modified on: 10/12/18");
-        </script>This site was last modified on: 10/12/18
+      <script language="Javascript">
+        document.write("This page was last modified on: " + document.lastModified +"");
+        </script>
       </div>
       
   </footer>
 </div>
-<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_daboss6500&amp;utm_content=footer_img"><img src="./index_files/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
-
-</body></html>
+</body>
+</html>
