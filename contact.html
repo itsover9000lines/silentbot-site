@@ -1,21 +1,63 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://daboss6500.000webhostapp.com/contact.html -->
+<html><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SilentBot</title>
-<link rel="icon" 
-      type="image/png" 
-      href="images/logo.png">
-<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="https://daboss6500.000webhostapp.com/images/logo.png">
+<link href="./contact_files/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 <body>
 <div class="container">
@@ -25,44 +67,42 @@
     </div>
     <nav class="secondary_header" id="menu">
       <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="commands.html">Commands</a></li>
-        <li><a href="invite.html">Invite</a></li>
-        <li><a href="polls.html">Polls</a></li>
-        <li><a href="discord.html">Discord</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/index.html">About</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/commands.html">Commands</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/invite.html">Invite</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/polls.html">Polls</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/discord.html">Discord</a></li>
+        <li><a href="https://daboss6500.000webhostapp.com/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <section>
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
-      <h3>About SilentBot</h3>
-      <p>SilentBot is a multi-purpose bot. It's main feature is the logging system. I am currently working on a leaderboard system, so that should be fun ;)</p>
-      <p>SilentBot currently watches over 8 servers, and 0ver 3,000 users in total! If you would like to add the bot to your server, go to the invite tab!</p>
+       <iframe src="./contact_files/viewform.html" width="640" height="1071" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </article>
-    <aside class="right_article"><img src="images/logo.png" alt="Logo" width="400" height="200" class="placeholder"/> </aside>
+    <aside class="right_article"><img src="./contact_files/ProfilePicture.png" alt="Channel Logo" width="400" height="200" class="placeholder"> </aside>
   </section>
   <div class="row">
     <div class="columns">
-      <p class="thumbnail_align"> <img src="images/twitter.png" alt="" class="thumbnail"/> </p>
+      <p class="thumbnail_align"> <img src="./contact_files/twitter.png" alt="" class="thumbnail"> </p>
       <h4>Twitter</h4>
-      <p><a href="https://www.twitter.com/SilentsTweetz">Twitter</a> | Owners twitter</p>
+      <p><a href="https://www.twitter.com/SilentsTweetz">Twitter</a> | I often post here when I upload, stream, or just to post and say hi!</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="images/discord.png" alt="" class="thumbnail"/> </p>
+      <p class="thumbnail_align"> <img src="./contact_files/discord.png" alt="" class="thumbnail"> </p>
       <h4>Discord</h4>
-      <p><a href="https://discord.gg/8dTVWrg">Discord</a> | Support Discord</p>
+      <p><a href="https://discord.gg/gbCtGSm">Discord</a> | Discord is a lovely place to meet new people, game with friends, and talk to me! I am on discord quite a lot!</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="images/ytlogo.png" alt="" class="thumbnail"/> </p>
+      <p class="thumbnail_align"> <img src="./contact_files/ytlogo.png" alt="" class="thumbnail"> </p>
       <h4>YouTube</h4>
-      <p><a href="https:youtube.com/SilentGamerOfficial">YouTube</a> | Owners youtube</p>
+      <p><a href="https://daboss6500.000webhostapp.com/youtube.com/SilentGamerOfficial">YouTube</a> | I upload a lot of videos here, mostly gaming but I do do some tutorials here and there!</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="images/twitch.png" alt="" class="thumbnail"/> </p>
+      <p class="thumbnail_align"> <img src="./contact_files/twitch.png" alt="" class="thumbnail"> </p>
       <h4>Twitch</h4>
-      <p><a href="https:twitch.tv/silentgamerplayz">Twitch</a> | Owners Twitch Channel</p>
+      <p><a href="https://daboss6500.000webhostapp.com/twitch.tv/silentgamerplayz">Twitch</a> | I do lots of livestreams here whenever I can!</p>
     </div>
   </div>
   <div class="row blockDisplay">
@@ -76,14 +116,8 @@
   </div>
   <footer class="secondary_header footer">
     <div class="copyright">Made By SilentGamerPlayz</div>
-    
-    <div class="copyright">
-      <script language="Javascript">
-        document.write("This page was last modified on: " + document.lastModified +"");
-        </script>
-      </div>
-      
   </footer>
 </div>
-</body>
-</html>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_daboss6500&amp;utm_content=footer_img"><img src="./contact_files/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
+
+</body></html>
