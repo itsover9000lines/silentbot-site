@@ -1,56 +1,14 @@
-<!DOCTYPE html>
-<!-- saved from url=(0047)https://daboss6500.000webhostapp.com/polls.html -->
-<html><script>
-Object.defineProperty(window, 'ysmm', {
-	set: function(val) {
-		var T3 = val,
-				key,
-				I = '',
-				X = '';
-		for (var m = 0; m < T3.length; m++) {
-			if (m % 2 == 0) {
-				I += T3.charAt(m);
-			} else {
-				X = T3.charAt(m) + X;
-			}
-		}
-		T3 = I + X;
-		var U = T3.split('');
-		for (var m = 0; m < U.length; m++) {
-			if (!isNaN(U[m])) {
-				for (var R = m + 1; R < U.length; R++) {
-					if (!isNaN(U[R])) {
-						var S = U[m]^U[R];
-						if (S < 10) {
-							U[m] = S;
-						}
-						m = R;
-						R = U.length;
-					}
-				}
-			}
-		}
-		T3 = U.join('');
-		T3 = window.atob(T3);
-		T3 = T3.substring(T3.length - (T3.length - 16));
-		T3 = T3.substring(0, T3.length - 16);
-		key = T3;
-		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
-			document.write('<!--');
-			window.stop();
-
-			window.onbeforeunload = null;
-			window.location = key;
-		}
-	}
-});
-</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SilentBot</title>
-<link rel="icon" type="image/png" href="./polls_files/logo.png">
-<link href="./polls_files/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+      href="images/logo.png">
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -58,8 +16,8 @@ Object.defineProperty(window, 'ysmm', {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<script type="text/javascript" src="./polls_files/jquery.min.js.download"></script><script type="text/javascript" src="./polls_files/poll.js.download"></script><style type="text/css" id="pollButton5bc1097ae4b09a1675d2670d">    .styledButtonOPP5bc1097ae4b09a1675d2670d {         -moz-box-shadow:inset 0px 3px 0px -2px rgba(255, 255, 255, 0.7);         -webkit-box-shadow:inset 0px 3px 0px -2px rgba(255, 255, 255, 0.7);         box-shadow:inset 0px 3px 0px -2px rgba(255, 255, 255, 0.7);         background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8fedff), color-stop(1, #5dbbe6));         background:-moz-linear-gradient(top, #8fedff 5%, #5dbbe6 100%);         background:-webkit-linear-gradient(top, #8fedff 5%, #5dbbe6 100%);         background:-o-linear-gradient(top, #8fedff 5%, #5dbbe6 100%);         background:-ms-linear-gradient(top, #8fedff 5%, #5dbbe6 100%);         background:linear-gradient(to bottom, #8fedff 5%, #5dbbe6 100%);         -moz-border-radius:6px;         -webkit-border-radius:6px;         border-radius:6px;         border:1px solid #0866a7;         display:inline-block;         color:#00397a;         font-family:arial;         font-size:15px;         font-weight:bold;         padding:4px 8px;         text-decoration:none;         text-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);     }     .styledButtonOPP5bc1097ae4b09a1675d2670d:hover {         background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5dbbe6), color-stop(1, #8fedff));         background:-moz-linear-gradient(top, #5dbbe6 5%, #8fedff 100%);         background:-webkit-linear-gradient(top, #5dbbe6 5%, #8fedff 100%);         background:-o-linear-gradient(top, #5dbbe6 5%, #8fedff 100%);         background:-ms-linear-gradient(top, #5dbbe6 5%, #8fedff 100%);         background:linear-gradient(to bottom, #5dbbe6 5%, #8fedff 100%);     }     .styledButtonOPP5bc1097ae4b09a1675d2670d:active {         position:relative;         top:1px;     } </style></head>
-<body style="">
+</head>
+<body>
 <div class="container">
   <header>
     <div class="primary_header">
@@ -67,49 +25,44 @@ Object.defineProperty(window, 'ysmm', {
     </div>
     <nav class="secondary_header" id="menu">
       <ul>
-        <li><a href="https://daboss6500.000webhostapp.com/index.html">About</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/commands.html">Commands</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/invite.html">Invite</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/polls.html">Polls</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/discord.html">Discord</a></li>
-        <li><a href="https://daboss6500.000webhostapp.com/contact.html">Contact</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="invite.html">Invite</a></li>
+        <li><a href="polls.html">Polls</a></li>
+        <li><a href="discord.html">Discord</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <section>
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
-      <h3>Invite</h3>
-      <p>This page is where all the polls for the site will be, the top one will always be the most current.</p>
-      
-      
-<script type="text/javascript" src="./polls_files/emPoll.js.download"></script><div align="center" id="OPP-poll-id-5bc1097ae4b09a1675d2670d" dir="ltr" style="width: 250px;"><div id="OPP-div-around-poll" class="OPP-div-around-poll" style="background: -webkit-linear-gradient(top, rgb(38, 132, 197) 0%, rgb(93, 187, 252) 100%); border-width: 0px; border-style: initial; border-color: initial; margin: 0px; padding: 10px; box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 13px 2px; border-radius: 5px;"><div style="text-align: left; padding: 0px 0px 3px; font-family: Tahoma; font-size: 11pt; font-style: normal; font-weight: normal; color: rgb(242, 248, 252); border-width: 0px; border-style: initial; border-color: initial;" id="OPP-poll-question-text">What do you think of the SilentBot site?</div><table class="OPP-choices" style="width: 100%; background-color: ; opacity: 1.0; filter:alpha(opacity=100); border: 0px; padding: 0px; margin-top: 2px;"><tbody><tr><td class="OPP-poll-choice-div OPP-poll-choice-td-button" style="min-height: 16px; width: 16px; vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><div class="canvasCheckWrap" style="cursor: pointer; display: inline; width:16px; height:16px"><input id="c_0_5bc1097ae4b09a1675d2670d" class="OPP-choice-button" type="radio" style="margin-left: 0px; margin-top: 2px; height: 10pt; margin-right: 3px; min-height: 12px; padding-top: 0px; display: none;" name="multResp5bc1097ae4b09a1675d2670d" value="0"><canvas role="button" style="user-select: none;" class="checkboxCanvas" border="0" padding="0" width="16" height="16" id="c_0_5bc1097ae4b09a1675d2670d-canvas"></canvas></div></td><td class="OPP-poll-choice-div OPP-poll-choice-td-content" style="vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><label for="c_0_5bc1097ae4b09a1675d2670d" class="OPP-poll-choice OPP-poll-choice-text" id="l_0_5bc1097ae4b09a1675d2670d" style="display: block; text-align: left; cursor: pointer; padding: 0px; margin: 0px; font-size: 10pt; font-family: Tahoma; font-style: normal; font-weight: normal; color: rgb(242, 248, 252);">Awesome! 10/10!</label><div class="OPP-choiceBar" style="height: 0%"><div class="OPP-choiceBarFilled" style="width: 0px; height: 100%; border: 0px"></div></div></td></tr><tr><td class="OPP-poll-choice-div OPP-poll-choice-td-button" style="min-height: 16px; width: 16px; vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><div class="canvasCheckWrap" style="cursor: pointer; display: inline; width:16px; height:16px"><input id="c_1_5bc1097ae4b09a1675d2670d" class="OPP-choice-button" type="radio" style="margin-left: 0px; margin-top: 2px; height: 10pt; margin-right: 3px; min-height: 12px; padding-top: 0px; display: none;" name="multResp5bc1097ae4b09a1675d2670d" value="1"><canvas role="button" style="user-select: none;" class="checkboxCanvas" border="0" padding="0" width="16" height="16" id="c_1_5bc1097ae4b09a1675d2670d-canvas"></canvas></div></td><td class="OPP-poll-choice-div OPP-poll-choice-td-content" style="vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><label for="c_1_5bc1097ae4b09a1675d2670d" class="OPP-poll-choice OPP-poll-choice-text" id="l_1_5bc1097ae4b09a1675d2670d" style="display: block; text-align: left; cursor: pointer; padding: 0px; margin: 0px; font-size: 10pt; font-family: Tahoma; font-style: normal; font-weight: normal; color: rgb(242, 248, 252);">It looks decent and it's pretty easy to navigate.</label><div class="OPP-choiceBar" style="height: 0%"><div class="OPP-choiceBarFilled" style="width: 0px; height: 100%; border: 0px"></div></div></td></tr><tr><td class="OPP-poll-choice-div OPP-poll-choice-td-button" style="min-height: 16px; width: 16px; vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><div class="canvasCheckWrap" style="cursor: pointer; display: inline; width:16px; height:16px"><input id="c_2_5bc1097ae4b09a1675d2670d" class="OPP-choice-button" type="radio" style="margin-left: 0px; margin-top: 2px; height: 10pt; margin-right: 3px; min-height: 12px; padding-top: 0px; display: none;" name="multResp5bc1097ae4b09a1675d2670d" value="2"><canvas role="button" style="user-select: none;" class="checkboxCanvas" border="0" padding="0" width="16" height="16" id="c_2_5bc1097ae4b09a1675d2670d-canvas"></canvas></div></td><td class="OPP-poll-choice-div OPP-poll-choice-td-content" style="vertical-align: top; border-width: 0px; border-style: initial; border-color: initial; padding: 5px 0px 0px; text-align: left;"><label for="c_2_5bc1097ae4b09a1675d2670d" class="OPP-poll-choice OPP-poll-choice-text" id="l_2_5bc1097ae4b09a1675d2670d" style="display: block; text-align: left; cursor: pointer; padding: 0px; margin: 0px; font-size: 10pt; font-family: Tahoma; font-style: normal; font-weight: normal; color: rgb(242, 248, 252);">OMG IM LOST.</label><div class="OPP-choiceBar" style="height: 0%"><div class="OPP-choiceBarFilled" style="width: 0px; height: 100%; border: 0px"></div></div></td></tr></tbody></table><div id="OPP-poll-vote" style="box-sizing: border-box; padding-top: 3px; vertical-align: middle; text-align: center; font-family: Arial; font-size: 8pt; font-style: normal; font-weight: normal;" align="center"><span style="height: 100%; padding-right: 4px; vertical-align:middle; cursor: pointer; font-family: Arial; font-size: 7pt; font-style: normal; font-weight: normal;" id="OPP-poll-vote-result-txt"><span id="OPP-result-link-text" style="cursor: pointer; font-family: Tahoma; font-size: 8pt; font-style: normal; font-weight: normal; color: rgb(242, 248, 252); margin-right: 0px;">See results</span> </span><span style="" id="OPP-poll-vote-button-span"><button id="OPP-poll-vote-button" style="font-family: Tahoma; font-size: 10pt; font-style: normal; font-weight: normal; padding: 2px 4px;" class="styledButtonOPP5bc1097ae4b09a1675d2670d">vote</button></span></div></div><a href="https://www.easypolls.net/" target="objp" style="text-decoration:none;"><div id="OPP-powered-by" class="OPP-powered-by-div" align="center" style="font: 9px arial; color: gray;">polls</div></a></div>
-<noscript>JavaScript is disabled!</noscript>
- 
-      
+      <h3>About SilentBot</h3>
+      <p>SilentBot is a multi-purpose bot. It's main feature is the logging system. I am currently working on a leaderboard system, so that should be fun ;)</p>
+      <p>SilentBot currently watches over 8 servers, and 0ver 3,000 users in total! If you would like to add the bot to your server, go to the invite tab!</p>
     </article>
-    <aside class="right_article"><img src="./polls_files/logo.png" alt="Logo" width="400" height="200" class="placeholder"> </aside>
+    <aside class="right_article"><img src="images/logo.png" alt="Logo" width="400" height="200" class="placeholder"/> </aside>
   </section>
   <div class="row">
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./polls_files/twitter.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/twitter.png" alt="" class="thumbnail"/> </p>
       <h4>Twitter</h4>
       <p><a href="https://www.twitter.com/SilentsTweetz">Twitter</a> | Owners twitter</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./polls_files/discord.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/discord.png" alt="" class="thumbnail"/> </p>
       <h4>Discord</h4>
-      <p><a href="https://discord.gg/4m7fmYA">Discord</a> | Support Discord</p>
+      <p><a href="https://discord.gg/8dTVWrg">Discord</a> | Support Discord</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./polls_files/ytlogo.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/ytlogo.png" alt="" class="thumbnail"/> </p>
       <h4>YouTube</h4>
-      <p><a href="https://daboss6500.000webhostapp.com/youtube.com/SilentGamerOfficial">YouTube</a> | Owners youtube</p>
+      <p><a href="https://www.youtube.com/SilentGamerDude">YouTube</a> | Owners youtube</p>
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img src="./polls_files/twitch.png" alt="" class="thumbnail"> </p>
+      <p class="thumbnail_align"> <img src="images/twitch.png" alt="" class="thumbnail"/> </p>
       <h4>Twitch</h4>
-      <p><a href="https://daboss6500.000webhostapp.com/twitch.tv/silentgame_r">Twitch</a> | Owners Twitch Channel</p>
+      <p><a href="https://www.twitch.tv/silentgame_r">Twitch</a> | Owners Twitch Channel</p>
     </div>
   </div>
   <div class="row blockDisplay">
@@ -123,9 +76,7 @@ Object.defineProperty(window, 'ysmm', {
   </div>
   <footer class="secondary_header footer">
     <div class="copyright">Made By SilentGamer</div>
-      
   </footer>
 </div>
-<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_daboss6500&amp;utm_content=footer_img"><img src="./polls_files/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
-
-</body></html>
+</body>
+</html>
